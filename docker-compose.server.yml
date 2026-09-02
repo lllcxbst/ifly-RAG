@@ -1,0 +1,20 @@
+# Server-only override: lets the existing personal-kb Caddy container reach
+# this app through an explicit, uniquely aliased external network.
+services:
+  postgres:
+    networks:
+      support_bot_net:
+        aliases:
+          - support-bot-postgres
+
+  app:
+    networks:
+      support_bot_net:
+      personal_kb_web:
+        aliases:
+          - support-bot-app
+
+networks:
+  personal_kb_web:
+    external: true
+    name: personal-kb_default

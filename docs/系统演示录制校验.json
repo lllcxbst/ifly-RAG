@@ -1,0 +1,52 @@
+{
+  "url": "https://support.43.160.222.130.nip.io",
+  "generated_at": "2026-09-02T00:55:27.338Z",
+  "elapsed_seconds": 200,
+  "browser_errors": [],
+  "events": [
+    {
+      "seconds": 2,
+      "message": "线上系统已打开，服务状态正常"
+    },
+    {
+      "seconds": 14,
+      "message": "已提交：通用大模型链路 SDK 接入需要什么版本，aiui_ver 设多少，API 是长连接还是短连接？"
+    },
+    {
+      "seconds": 21,
+      "message": "回答完成：6.xxx 及以上版本"
+    },
+    {
+      "seconds": 38,
+      "message": "已提交：AIUI 支持 8k 音频吗？SDK 采集音频要注意什么？"
+    },
+    {
+      "seconds": 78,
+      "message": "回答完成：AIUI SDK 不支持 8k 音频"
+    },
+    {
+      "seconds": 94,
+      "message": "已提交：明天北京天气如何？"
+    },
+    {
+      "seconds": 112,
+      "message": "回答完成：当前知识库中没有找到足够可靠的依据"
+    },
+    {
+      "seconds": 125,
+      "message": "知识控制台已验证：文档、片段和图谱状态正常"
+    },
+    {
+      "seconds": 144,
+      "message": "结构化知识图谱已加载：149 个实体、121 条关系"
+    },
+    {
+      "seconds": 162,
+      "message": "已展开实体关系详情"
+    },
+    {
+      "seconds": 200,
+      "message": "演示完成"
+    }
+  ]
+}

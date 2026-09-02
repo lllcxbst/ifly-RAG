@@ -1,0 +1,33 @@
+{
+  "run_date": "2026-08-25",
+  "environment": "Docker Compose; PostgreSQL 16 + pgvector + pg_trgm; extractive demo mode",
+  "dataset": "data/evaluation/questions.json",
+  "before": {
+    "total": 30,
+    "passed": 23,
+    "accuracy": 0.7667,
+    "by_category": {
+      "capability": 0.8,
+      "usage": 0.7,
+      "troubleshooting": 0.8
+    }
+  },
+  "after": {
+    "total": 30,
+    "passed": 30,
+    "accuracy": 1.0,
+    "by_category": {
+      "capability": 1.0,
+      "usage": 1.0,
+      "troubleshooting": 1.0
+    },
+    "failed_ids": []
+  },
+  "optimization": [
+    "merge pgvector semantic candidates with pg_trgm lexical candidates",
+    "domain query expansion for product support vocabulary",
+    "exact error-code and numeric identifier weighting",
+    "dynamic evidence floor to suppress irrelevant citations"
+  ],
+  "caveat": "This is a fixed fictional demo set. Re-run with verified real product documentation before production acceptance."
+}

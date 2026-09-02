@@ -1,0 +1,39 @@
+{
+  "dataset": "data/evaluation/questions.json",
+  "baseline": {
+    "total": 30,
+    "passed": 20,
+    "accuracy": 0.6667,
+    "by_category": {
+      "capability": 0.9,
+      "troubleshooting": 0.5,
+      "usage": 0.6
+    },
+    "failed_ids": [
+      "C08",
+      "U01",
+      "U04",
+      "U07",
+      "U09",
+      "T01",
+      "T03",
+      "T04",
+      "T07",
+      "T09"
+    ]
+  },
+  "optimized": {
+    "total": 30,
+    "passed": 29,
+    "accuracy": 0.9667,
+    "by_category": {
+      "capability": 1.0,
+      "troubleshooting": 1.0,
+      "usage": 0.9
+    },
+    "failed_ids": [
+      "U05"
+    ]
+  },
+  "optimization": "中文字符 bigram + 词频余弦 + 查询扩展 + 标题加权 + Top-5 证据融合 + 未知问题阈值"
+}
